@@ -1,8 +1,21 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Playfair_Display, Montserrat } from 'next/font/google'
+import Navbar from './Navbar';
 
-const inter = Inter({ subsets: ['latin'] })
+export const playfair = Playfair_Display({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "500", "700", "800", "900" ],
+  variable: "--font-playfair"
+ });
+
+export const montseratt = Montserrat({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "500", "700", "800", "900" ],
+  variable: "--font-montserrat"
+ });
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +29,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${montseratt.className} relative`}>
+        <Navbar />
+        {children}
+      </body>
     </html>
-  )
+  );
 }
