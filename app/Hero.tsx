@@ -1,3 +1,4 @@
+import LeadForm from "@/components/Leads/LeadForm";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,14 +12,7 @@ const Hero = () => {
             <h1 className="font-sans text-white text-2xl md:text-4xl font-semibold uppercase">
               Maximize Your Tax Season Triumph with Rligence Tax Affairs!
             </h1>
-            <Link href="/tax-savings" className="mt-4">
-              <Button
-                type="button"
-                className="bg-orange-300 rounded-none text-black hover:text-white"
-              >
-                Unlock Your Tax Savings!
-              </Button>
-            </Link>
+          <LeadForm />
           </div>
           <div className="flex items-center justify-center">
             <Image
