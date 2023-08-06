@@ -5,8 +5,8 @@ const Hero = () => {
     <header className="relative">
       <Image
         src="/images/realestate.jpg"
-        width={640}
-        height={427}
+        width={1279}
+        height={854}
         alt="Real Estate"
         className="w-full object-cover md:aspect-[5/2]"
       />
