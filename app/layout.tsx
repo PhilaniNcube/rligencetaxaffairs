@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Playfair_Display, Montserrat } from 'next/font/google'
 import Navbar from './Navbar';
+import { Toaster } from "@/components/ui/toaster";
 
 export const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -32,6 +33,7 @@ export default function RootLayout({
       <body className={`${montseratt.className} relative`}>
         <Navbar />
         {children}
+        <Toaster />
       </body>
     </html>
   );

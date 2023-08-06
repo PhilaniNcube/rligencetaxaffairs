@@ -10,8 +10,8 @@ const links = [
     href: "/individuals-tax",
   },
   {
-    name: "Business Tax",
-    href: "/business-tax",
+    name: "Real Estate",
+    href: "/realestate",
   },
   {
     name: "Blog",
