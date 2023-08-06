@@ -2,6 +2,36 @@ import { getBlogArticles } from "@/sanity/sanity-utils";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import type { Metadata } from "next/types";
+
+export const metadata: Metadata = {
+  title: "Blog | Rligence Tax Services",
+  description:
+    "The Rligence Tax Services blog is a great resource for tax news, tips, and advice. We cover a wide range of topics, from tax law changes to tax planning strategies.",
+  keywords:
+    "tax preparation, tax planning, tax consulting, tax services, tax accountants, tax professionals",
+  authors: [
+    {
+      name: "Rligence Tax Services",
+      url: "https://rligencetaxservices.co.za/blog",
+    },
+  ],
+  robots: "index, follow",
+  openGraph: {
+    type: "website",
+    locale: "en_ZA",
+    url: "https://rligencetaxservices.co.za/blog",
+    title: "Blog | Rligence Tax Services",
+    description:
+      "The Rligence Tax Services blog is a great resource for tax news, tips, and advice. We cover a wide range of topics, from tax law changes to tax planning strategies.",
+    images: [
+      {
+        url: "https://rligencetaxaffairs.vercel.app/_next/image?url=%2Fimages%2Fcropped-logo.png&w=2048&q=75",
+      },
+    ],
+  },
+  category: "Accounting And Taxation",
+};
 
 const page = async () => {
 

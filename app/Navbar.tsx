@@ -17,10 +17,10 @@ const links = [
     name: "Blog",
     href: "/blog",
   },
-  {
-    name: "About",
-    href: "/about",
-  }
+  // {
+  //   name: "About",
+  //   href: "/about",
+  // }
 ]
 
 const Navbar = () => {

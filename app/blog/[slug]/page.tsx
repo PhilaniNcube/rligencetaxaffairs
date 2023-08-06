@@ -4,6 +4,25 @@ import Image from "next/image";
 import Link from "next/link";
 import { PortableText } from "@portabletext/react";
 
+export async function generateMetadata({
+  params: { slug },
+}: {
+  params: { slug: string };
+}) {
+const article = await getBlogArticle(slug);
+
+return {
+  title: `${article.title} | Rligence Tax Services`,
+  description: article.title,
+  keywords: `${article.title}, real estate planning, real estate taxes, tax preparation, tax planning, tax consulting, tax services, tax accountants, tax professionals`,
+  openGraph: {
+    title: `${article.title} | Rligence Tax Services`,
+    images: [article.image],
+  },
+};
+
+}
+
 const page = async ({params: {slug}}:{params: {slug:string}}) => {
 
   const article = await getBlogArticle(slug)
