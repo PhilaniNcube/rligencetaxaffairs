@@ -1,7 +1,7 @@
 import {defineConfig} from 'sanity'
 import {deskTool} from 'sanity/desk'
 // import article from './sanity/schemas/article-schema'
-// import schemas from './sanity/schemas'
+import schemas from './sanity/schemas'
 
 
 const config = defineConfig({
@@ -11,7 +11,7 @@ const config = defineConfig({
   title: 'Rligence Tax Services',
   basePath: '/studio',
   plugins: [deskTool()],
-  // schema: {types: schemas},
+  schema: {types: schemas},
 })
 
 
