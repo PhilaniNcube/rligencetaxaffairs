@@ -1,6 +1,6 @@
 "use client"
 
-import { Button } from "@/components/ui/button";
+import LeadForm from "@/components/Leads/LeadForm";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
@@ -49,11 +49,7 @@ const DesktopNavigation = ({ links }: NavProps) => {
         </div>
       </div>
 
-      <Link href="/contact">
-        <Button className="rounded-none bg-orange-300 text-black hover:text-white">
-          Contact Us
-        </Button>
-      </Link>
+     <LeadForm />
     </div>
   );
 };
